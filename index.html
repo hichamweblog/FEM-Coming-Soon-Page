@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+	<meta name="description" content="A coming soon page for a fictional company called Ping.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<title>Frontend Mentor | Ping coming soon page</title>
+	<link rel="stylesheet" href="./src/css/index.css">
+	<script type="module" src="./src/js/index.js" defer></script>
+</head>
+
+<body>
+	<header class="site-header wrapper">
+		<img src="./src/images/logo.svg" alt="">
+	</header>
+	<main class="site-main wrapper text-center">
+		<h1>We are launching <span class="bold">soon!</span></h1>
+		<p>Subscribe and get notified
+		</p>
+		<form class="form" action="#" aria-labelledby="subscribe">
+			<h2 id="subscribe" class="sr-only">Subscribe to get notified</h2>
+			<label for="email" class="sr-only">Email address</label>
+			<div class="input-group">
+				<input type="email" name="email" id="email" placeholder="Your email address..." >
+				<button type="submit">Notify Me</button>
+			</div>
+			<p class="error-message" id="error-message" aria-live="polite">Please provide a valid email address</p>
+		</form>
+		<figure>
+			<img src="./src/images/illustration-dashboard.png" loading="lazy" alt="Illustration of a dashboard">
+		</figure>
+
+	</main>
+	<footer class="site-footer wrapper text-center">
+		<ul class="flex-center social-icons" role="list">
+
+			<li>
+				<a href="#" class="social-icon" aria-label="Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M22.675 0h-21.35C.6 0 0 .6 0 1.342v21.317C0 23.4.6 24 1.325 24H12.82V14.708h-3.462v-3.62h3.462V8.413c0-3.442 2.102-5.313 5.174-5.313 1.47 0 2.73.11 3.1.158v3.585h-2.127c-1.666 0-1.99.79-1.99 1.95v2.56h3.985l-.521 3.62h-3.464V24h6.8c.725 0 1.325-.6 1.325-1.341V1.342C24 .6 23.4 0 22.675 0z" />
+					</svg>
+				</a>
+			</li>
+
+			<li>
+				<a href="#" class="social-icon" aria-label="Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.196 4.917 4.917 0 0 0-8.384 4.482A13.944 13.944 0 0 1 1.671 3.15 4.917 4.917 0 0 0 3.17 9.723a4.902 4.902 0 0 1-2.229-.616v.06a4.917 4.917 0 0 0 3.946 4.827 4.935 4.935 0 0 1-2.224.084 4.919 4.919 0 0 0 4.6 3.416 9.867 9.867 0 0 1-6.102 2.102c-.395 0-.779-.023-1.161-.067A13.954 13.954 0 0 0 7.548 21c9.142 0 14.307-7.721 14.307-14.428 0-.22-.004-.439-.015-.657A10.243 10.243 0 0 0 24 4.557z" />
+					</svg>
+				</a>
+			</li>
+
+			<li>
+				<a href="#" class="social-icon" aria-label="Instagram">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.33 3.608 1.304.975.975 1.242 2.243 1.304 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.33 2.633-1.304 3.608-.975.975-2.243 1.242-3.608 1.304-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.33-3.608-1.304-.975-.975-1.242-2.243-1.304-3.608-.058-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.33-2.633 1.304-3.608.975-.975 2.243-1.242 3.608-1.304 1.265-.058 1.645-.069 4.849-.069zm0-2.163C8.735 0 8.332.013 7.052.072 5.773.13 4.57.345 3.545 1.37 2.52 2.394 2.305 3.597 2.247 4.876.188 5.66 0 6.453 0 12s.188 6.34.247 7.62c.058 1.279.273 2.482 1.298 3.507 1.025 1.025 2.229 1.24 3.508 1.298C6.34 23.812 6.453 24 12 24s6.34-.188 7.62-.247c1.279-.058 2.482-.273 3.507-1.298 1.025-1.025 1.24-2.229 1.298-3.507C23.812 17.66 24 17.547 24 12s-.188-6.34-.247-7.62c-.058-1.279-.273-2.482-1.298-3.507-1.025-1.025-2.229-1.24-3.507-1.298C17.66.188 17.547 0 12 0zM12 5.838a6.163 6.163 0 1 0 0 12.326 6.163 6.163 0 0 0 0-12.326zm0 10.163a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1-2.882 0 1.44 1.44 0 0 1 2.882 0z" />
+					</svg>
+				</a>
+			</li>
+		</ul>
+
+		<p>&copy; Copyright Ping. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>
